@@ -126,6 +126,8 @@ var taskCompleted=function(){
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
+    listItem.classList.remove('todo__item')
+    listItem.classList.add('complete__item')
 }
 
 
@@ -137,6 +139,9 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+
+    listItem.classList.remove('complete__item')
+    listItem.classList.add('todo__item')
 }
 
 
