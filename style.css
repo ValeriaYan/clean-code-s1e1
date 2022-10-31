@@ -63,7 +63,7 @@ button{
   color: #3a3A3a;
 }
 /* Heading */
-.main__subtitle,
+.subtitle,
 .add-item__label {
   color: #333;
   font-weight: 700;
@@ -89,6 +89,9 @@ button{
 .item__task:focus,
 .add-item__task:focus {
   color: #333;
+}
+.header__title {
+  display: none;
 }
 
 /* New Task */
